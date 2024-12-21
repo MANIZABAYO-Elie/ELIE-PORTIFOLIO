@@ -754,6 +754,26 @@ video {
   width: 550px;
 }
 
+.w-\[x\] {
+  width: x;
+}
+
+.w-\[x700px\] {
+  width: x700px;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
 }
