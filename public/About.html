@@ -8,20 +8,35 @@
 </head>
 <body class="bg-[#F5F5DC]">
     <header>
-        <nav class="flex justify-between  bg-gray-900 text-white h-[80px]">
-             <img src="../src/images/elie-logo-official.jpg" 
-             class=" mt-[30px] ml-[100px]  w-[100px] h-[20px]" alt="my name">
-            <ul class="flex gap-[30px] mr-[300px] mt-[30px] h-[20px]">
-                 <li><a href="/public/index.html">Home</a></li>
-                 <li><a href="/public/About.html">About</a></li>
-                 <li><a href="/public/services.html">Services</a></li>
-                 <li><a href="/public/contact.html">Contact</a></li>
+        <nav class="flex justify-between items-center bg-gray-900 text-white h-[80px] px-4 sm:px-6 lg:px-16">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="../src/images/elie-logo-official.jpg" 
+                     class="w-[100px] h-[20px]" 
+                     alt="my name">
+            </div>
+            
+            <!-- Hamburger Menu for Mobile -->
+            <div class="block lg:hidden">
+                <button id="menu-toggle" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+    
+            <!-- Navigation Links -->
+            <ul id="nav-links" class="hidden lg:flex gap-8 mr-8 mt-2">
+                <li><a href="/public/index.html" class="hover:text-gray-400">Home</a></li>
+                <li><a href="/public/About.html" class="hover:text-gray-400">About</a></li>
+                <li><a href="/public/services.html" class="hover:text-gray-400">Services</a></li>
+                <li><a href="/public/contact.html" class="hover:text-gray-400">Contact</a></li>
             </ul>
         </nav>
- </header>
- <div class="">
-    <h1 class="pt-[50px] ml-[100px]  text-[56px]">About me</h1>
-    <p class=" ml-[100px]  justify-center mt-[30px] font-extralight 
+    </header>
+    <div class="block">
+        <h1 class="pt-[50px] ml-[100px]  text-[56px]">About me</h1>
+        <p class=" ml-[100px]  justify-center mt-[30px] font-extralight 
      text-[28px] leading-[32px] tracking-[2px]">
         I'm a  2+ years of experience Front-End Developer with a strong passion for creating
         responsive websites and dynamic web applications, I specialize in technologies
@@ -31,9 +46,9 @@
         I collaborate with different designers and backend-developers 
         to ensure efficiency for both user expriences and user interfaces.I engage in upcoming  technologies  so as to adapt 
         to changing market demands.
-    </p>
-</div>
-<footer class="bg-gray-900 text-gray-300 py-8 mt-[200px]">
+        </p>
+    </div>
+    <footer class="bg-gray-900 text-gray-300 py-8 mt-[200px]">
     <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
       <!-- Logo and About Section -->
       <div>
@@ -80,10 +95,10 @@
     </div>
   
     <div class="mt-8 text-center border-t border-gray-700 pt-4">
-      <p class="text-sm">&copy; 2024 MANIZABAYO ELIE. All rights reserved.</p>
+      <p class="text-sm">&copy; 2025 MANIZABAYO ELIE. All rights reserved.</p>
     </div>
-  </footer>
+    </footer>
+    <script src="../public/navbar.js"></script>
 </body>
 </html>
-</body>
 </html>
